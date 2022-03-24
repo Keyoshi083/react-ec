@@ -15,6 +15,7 @@ import initialState from "../store/initialState";
  */
 export const UsersReducer = (state = initialState, action) => {
   //switch分で、actionのタイプごとに変更するState、payloadを設定
+  console.log({ ...state, ...action.payload });
   switch (action.type) {
     case Actions.SIGN_IN:
       return { ...state, ...action.payload };

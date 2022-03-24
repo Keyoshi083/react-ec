@@ -6,6 +6,7 @@
 const initialState = {
   products: {},
   users: {
+    icon: "",
     isSignIn: false,
     uid: "",
     username: "",
