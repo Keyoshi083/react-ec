@@ -11,7 +11,7 @@ export function signInAction(userState) {
   return {
     type: SIGN_IN,
     payload: {
-      isSignedIn: true,
+      isSignIn: true,
       uid: userState.uid,
       username: userState.username,
     },
